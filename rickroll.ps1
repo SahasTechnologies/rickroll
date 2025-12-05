@@ -1,7 +1,7 @@
 # Rickroll.ps1
-# Plays audio from GitHub and shows lyric popups
+# Plays MP3 from GitHub and shows lyric popups
 
-# Use Windows Media Player COM object to play MP3
+# Create Windows Media Player COM object
 $player = New-Object -ComObject WMPlayer.OCX
 $player.URL = "https://github.com/SahasTechnologies/rickroll/raw/refs/heads/main/rickroll.mp3"
 $player.controls.play()
